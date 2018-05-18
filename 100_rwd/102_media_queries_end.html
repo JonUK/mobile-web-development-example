@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>101 - Media Queries End</title>
+
+    <style>
+
+        div {
+            font-family: sans-serif;
+            font-size: 2em;
+            padding: 10px;
+        }
+
+        #small {
+            background-color: yellow;
+        }
+
+        #large {
+            display: none;
+            background-color: red;
+        }
+
+        @media screen and (min-width: 601px) {
+            #small {
+                display: none;
+            }
+
+            #large {
+                display: block;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="small">
+        Small viewport
+    </div>
+
+    <div id="large">
+        Large viewport
+    </div>
+
+</body>
+</html>
+
