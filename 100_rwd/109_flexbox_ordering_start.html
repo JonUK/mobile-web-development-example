@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>109 - Flexbox Ordering Start</title>
+
+    <style>
+
+        body {
+            font-family: sans-serif;
+        }
+
+        header,
+        footer,
+        section {
+
+            font-size: 2em;
+            box-sizing: border-box;
+            padding: 10px;
+            width: 100%;
+        }
+
+        #flexbox-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        header {
+            background-color: gray;
+        }
+
+        #section-a {
+            background-color: yellow;
+        }
+
+        #section-b {
+            background-color: red;
+        }
+
+        #section-c {
+            background-color: green;
+        }
+
+        #section-d {
+            background-color: blue;
+        }
+
+        footer {
+            background-color: brown;
+        }
+
+        @media screen and (min-width: 600px) {
+            #section-a,
+            #section-b,
+            #section-c,
+            #section-d {
+                width: 50%
+            }
+        }
+
+        @media screen and (min-width: 1000px) {
+            #section-a,
+            #section-b,
+            #section-c,
+            #section-d {
+                width: 25%
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <p>Objective 1: Swap Section B with Section A on on 2 column layout</p>
+    <p>Objective 2: Swap Section C with Section D on on 4 column layout</p>
+
+    <main id="flexbox-container">
+        <header>Header</header>
+        <section id="section-a">Section A</section>
+        <section id="section-b">Section B</section>
+        <section id="section-c">Section C</section>
+        <section id="section-d">Section D</section>
+        <footer>Footer</footer>
+    </main>
+
+</body>
+</html>
+

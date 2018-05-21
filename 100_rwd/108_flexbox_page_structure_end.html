@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>108 - Flexbox Page Structure End</title>
+
+    <style>
+
+        header,
+        footer,
+        section {
+            font-family: sans-serif;
+            font-size: 2em;
+            box-sizing: border-box;
+            padding: 10px;
+            width: 100%;
+        }
+
+        #flexbox-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        header {
+            background-color: gray;
+        }
+
+        #section-a {
+            background-color: yellow;
+        }
+
+        #section-b {
+            background-color: red;
+        }
+
+        #section-c {
+            background-color: green;
+        }
+
+        #section-d {
+            background-color: blue;
+        }
+
+        footer {
+            background-color: brown;
+        }
+
+        @media screen and (min-width: 600px) {
+            #section-a,
+            #section-b,
+            #section-c,
+            #section-d {
+                width: 50%
+            }
+        }
+
+        @media screen and (min-width: 1000px) {
+            #section-a,
+            #section-b,
+            #section-c,
+            #section-d {
+                width: 25%
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <main id="flexbox-container">
+        <header>Header</header>
+        <section id="section-a">Section A</section>
+        <section id="section-b">Section B</section>
+        <section id="section-c">Section C</section>
+        <section id="section-d">Section D</section>
+        <footer>Footer</footer>
+    </main>
+
+</body>
+</html>
+
