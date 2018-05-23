@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 157.009 99.767">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #242424;
+        font-family: Tahoma;
+      }
+
+      .cls-1 {
+        font-size: 42px;
+      }
+
+      .cls-2 {
+        font-size: 53px;
+      }
+    </style>
+  </defs>
+  <g id="Logo" transform="translate(-108 -31.836)">
+    <text id="Florist" class="cls-1" transform="translate(108 73.836)"><tspan x="0" y="0">Florist</tspan></text>
+    <text id="Gump_" data-name="Gump!" class="cls-2" transform="translate(108.009 120.603)"><tspan x="0" y="0">Gump!</tspan></text>
+  </g>
+</svg>
