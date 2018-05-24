@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>102b - Media Queries For High Resolution Devices</title>
+
+    <style>
+
+        body {
+            font-family: sans-serif;
+            font-size: 1.25em;
+            padding-top: 1em;
+            text-align: center;
+        }
+
+        #high-resolution {
+            display: none;
+        }
+
+        /*
+        dppx = Number of dots per px unit.
+        Same concept as device pixel ratio / CSS pixel ratio
+        */
+        @media screen and (min-resolution: 2dppx) {
+            #standard-resolution {
+                display: none;
+            }
+
+            #high-resolution {
+                display: block;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="standard-resolution">
+        You are on a normal resolution device
+    </div>
+
+    <div id="high-resolution">
+        <img src="images/hd.svg" height="40" width="40" style="vertical-align: middle" />
+        You are on a high resolution device
+    </div>
+</body>
+</html>
+
