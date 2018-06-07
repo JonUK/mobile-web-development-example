@@ -14,6 +14,10 @@
     <!-- Custom styles for this template -->
     <style>
 
+        body {
+            background-color: #999999;
+        }
+
         .starter-template {
             padding: 40px 15px;
             text-align: center;
@@ -53,6 +57,10 @@
             margin-top: 16px;
             margin-left: 15px;
             margin-right: 10px;
+        }
+
+        .navbarbanner > .user-dropdown {
+            z-index: 1; /* Allow the user's name to wrap over / on top of the navbar */
         }
 
         /*.navbarbanner > div.dropdown > a {*/
@@ -100,7 +108,7 @@
             </ul>
         </div>
 
-        <div class="dropdown">
+        <div class="dropdown user-dropdown">
             <a href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
                 <span class="glyphicon glyphicon-user"></span>
                 <span>Randall Macfarlane</span> <b class="caret"></b>
@@ -115,7 +123,7 @@
     </header>
 
 
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse" xxxstyle="display: none;">
         <div class="container">
 
             <div class="navbar-header">
