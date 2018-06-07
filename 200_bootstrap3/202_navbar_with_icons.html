@@ -32,6 +32,7 @@
             padding-left: 15px;
             padding-right: 15px;
             background-color: #222;
+            font-size: 1.1em;
         }
 
         .navbarbanner:before, .navbarbanner:after {
@@ -43,47 +44,16 @@
             /*clear: both;*/
         /*}*/
 
+        .navbarbanner a {
+            color: white;
+        }
 
-
-        /*.navbarbanner > h1 > span {*/
-            /*float: right;*/
-            /*margin-top: 12px;*/
-            /*margin-left: 4px;*/
-            /*line-height: 22px;*/
-            /*color: white;*/
-        /*}*/
-
-        /*.navbarbanner > h1 > span > span.logo-caption {*/
-            /*float: left;*/
-            /*font-size: 22px;*/
-            /*text-transform: uppercase;*/
-        /*}*/
-
-        /*@media (max-device-width: 480px) {*/
-            /*.navbarbanner > h1 > span > span.logo-caption {*/
-                /*font-size: 16px;*/
-            /*}*/
-        /*}*/
-
-        /*.navbarbanner > h1 > span > span.logo-subcaption {*/
-            /*float: right;*/
-            /*font-size: 12px;*/
-            /*line-height: 12px;*/
-        /*}*/
-
-        /*@media (max-device-width: 480px) {*/
-            /*.navbarbanner > h1 > span > span.logo-subcaption {*/
-                /*font-size: 9px;*/
-                /*line-height: 9px;*/
-            /*}*/
-        /*}*/
-
-        /*.navbarbanner > div.dropdown {*/
-            /*float: right;*/
-            /*margin-top: 14px;*/
-            /*margin-left: 15px;*/
-            /*margin-right: 10px;*/
-        /*}*/
+        .navbarbanner > div.dropdown {
+            float: right;
+            margin-top: 16px;
+            margin-left: 15px;
+            margin-right: 10px;
+        }
 
         /*.navbarbanner > div.dropdown > a {*/
             /*color: white;*/
@@ -111,17 +81,36 @@
 
     <header class="navbarbanner" role="banner">
 
-        <a href="#" style="font-size: 2em;">Project Name</a>
+        <a href="#" style="font-size: 2.5em;">Project Name</a>
+
+        <div class="dropdown">
+            <a href="#">
+                <span class="sr-only">Help page. Opens in new window.</span>
+                <span aria-hidden="true" class="glyphicon glyphicon-question-sign help-icon"></span>
+            </a>
+        </div>
+
+        <div class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                <span class="glyphicon glyphicon-open"></span>
+                <span>Uploads</span> <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu pull-right">
+                <li><a href="#">Do stuff!</a></li>
+            </ul>
+        </div>
 
         <div class="dropdown">
             <a href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
                 <span class="glyphicon glyphicon-user"></span>
-                <span>Mike Smith</span> <b class="caret"></b>
+                <span>Randall Macfarlane</span> <b class="caret"></b>
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu pull-right">
                 <li><a href="#">Logout</a></li>
             </ul>
         </div>
+
+
 
     </header>
 
