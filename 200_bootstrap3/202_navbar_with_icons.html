@@ -23,11 +23,20 @@
             text-align: center;
         }
 
+        .navbar {
+            border-radius: 0;
+            border: 0;
+        }
+
         /* Display the hamburger menu on the left */
         .navbar-toggle {
             float: none;
             margin-left: 15px;
             margin-right: 0;
+        }
+
+        .navbar-collapse {
+            padding-left: 0;
         }
 
         .navbarbanner {
@@ -36,7 +45,7 @@
             padding-left: 15px;
             padding-right: 15px;
             background-color: #222;
-            font-size: 1.1em;
+            font-size: 1em;
         }
 
         .navbarbanner:before, .navbarbanner:after {
@@ -44,37 +53,57 @@
             display: table;
         }
 
-        /*.navbarbanner:after {*/
-            /*clear: both;*/
-        /*}*/
-
         .navbarbanner a {
             color: white;
         }
 
-        .navbarbanner > div.dropdown {
+        .navbarbanner .dropdown {
             float: right;
             margin-top: 16px;
             margin-left: 15px;
             margin-right: 10px;
         }
 
-        .navbarbanner > .user-dropdown {
+        .user-dropdown {
             z-index: 1; /* Allow the user's name to wrap over / on top of the navbar */
         }
 
-        /*.navbarbanner > div.dropdown > a {*/
-            /*color: white;*/
-        /*}*/
+        .navbarbanner .user-dropdown,
+        .navbarbanner .uploads-dropdown,
+        .navbarbanner .help {
+            margin-top: 12px;
+            font-size: 1.5em;
+        }
 
-        /*.navbarbanner > div.dropdown > a > span.help-icon {*/
-            /*font-size: 16px;*/
-            /*margin-top: 2px;*/
-        /*}*/
+        .navbarbanner .uploads-dropdown-text {
+            display: none;
+        }
 
-        /*.navbarbanner > div.dropdown > div {*/
-            /*z-index: 1000;*/
-        /*}*/
+        .navbarbanner .user-dropdown-text {
+            font-size: 0.85em;
+        }
+
+
+        @media screen and (min-width: 768px) {
+
+            .navbarbanner .user-dropdown,
+            .navbarbanner .uploads-dropdown,
+            .navbarbanner .help {
+                margin-top: 16px;
+                font-size: 1em;
+            }
+
+            .navbarbanner .uploads-dropdown-text {
+                display: inline;
+            }
+
+            .navbarbanner .user-dropdown-text {
+                font-size: 1em;
+            }
+
+        }
+
+
 
     </style>
 
@@ -91,17 +120,17 @@
 
         <a href="#" style="font-size: 2.5em;">Project Name</a>
 
-        <div class="dropdown">
+        <div class="dropdown help">
             <a href="#">
                 <span class="sr-only">Help page. Opens in new window.</span>
                 <span aria-hidden="true" class="glyphicon glyphicon-question-sign help-icon"></span>
             </a>
         </div>
 
-        <div class="dropdown">
+        <div class="dropdown uploads-dropdown">
             <a href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
                 <span class="glyphicon glyphicon-open"></span>
-                <span>Uploads</span> <b class="caret"></b>
+                <span class="uploads-dropdown-text">Uploads</span> <b class="caret"></b>
             </a>
             <ul class="dropdown-menu pull-right">
                 <li><a href="#">Do stuff!</a></li>
@@ -111,7 +140,7 @@
         <div class="dropdown user-dropdown">
             <a href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
                 <span class="glyphicon glyphicon-user"></span>
-                <span>Randall Macfarlane</span> <b class="caret"></b>
+                <span class="user-dropdown-text">Randall Macfarlane</span> <b class="caret"></b>
             </a>
             <ul class="dropdown-menu pull-right">
                 <li><a href="#">Logout</a></li>
@@ -123,7 +152,7 @@
     </header>
 
 
-    <nav class="navbar navbar-inverse" xxxstyle="display: none;">
+    <nav class="navbar navbar-inverse">
         <div class="container">
 
             <div class="navbar-header">
