@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        .scrolling-list {
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+
+            width: 100%;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .scrolling-list .card {
+            display: inline-block;
+        }
+
+        .card {
+            border: 1px solid black;
+        }
+
+        .scrolling-list::-webkit-scrollbar {
+            display: none;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+
+    <div class="scrolling-list">
+        <div class="card">Evidence</div>
+        <div class="card">Suggestions</div>
+        <div class="card">Details</div>
+        <div class="card">Comments</div>
+        <div class="card">Activity</div>
+        <div class="card">Requests</div>
+        <div class="card">Sharing</div>
+    </div>
+
+
+
+
+</body>
+</html>

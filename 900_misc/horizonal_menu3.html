@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        ul.scrolling-list {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+
+            overflow-x: auto;
+            overflow-y: hidden;
+            white-space: nowrap;
+
+            width: 100%;
+            -webkit-overflow-scrolling: touch;
+            -ms-overflow-style: -ms-autohiding-scrollbar;
+        }
+
+        ul.scrolling-list li {
+            display: inline-block;
+            border: 1px solid black;
+        }
+
+        ul.scrolling-list::-webkit-scrollbar {
+            display: none;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+
+    <ul class="scrolling-list">
+        <li class="item">Evidence</li>
+        <li class="item">Suggestions</li>
+        <li class="item">Details</li>
+        <li class="item">Comments</li>
+        <li class="item">Activity</li>
+        <li class="item">Requests</li>
+        <li class="item">Sharing</li>
+    </ul>
+
+
+
+
+</body>
+</html>

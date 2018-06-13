@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        body {
+            font-size: 2em;
+        }
+
+        .main {
+            border: 1px solid red;
+            max-width: 750px;
+            margin: 0 auto;
+
+            display: flex;
+            align-items: stretch;
+        }
+
+        #sidebar {
+            position: absolute;
+            background-color: red;
+            width: 15%;
+
+        }
+
+        #separator {
+            position: absolute;
+            width: 5%;
+            background-color: yellow;
+
+        }
+
+        #content {
+            flex: 1;
+            background-color: green;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <div class="main">
+
+        <div id="sidebar">Filter</div>
+        <div id="separator">&gt;</div>
+        <div id="content">
+
+            This is where the main content for the page goes
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        body {
+            font-size: 1.2em;
+        }
+
+        .main {
+            position: relative;
+            display: flex;
+            align-items: stretch;
+        }
+
+        #sidebar-and-separator {
+
+            display: flex;
+
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+
+
+
+            width: 290px;
+        }
+
+        #sidebar {
+            /*position: absolute;*/
+            background-color: red;
+            flex: 1;
+        }
+
+        #separator {
+            /*position: absolute;*/
+            background-color: yellow;
+
+        }
+
+        #content {
+            flex: 1;
+            background-color: green;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <div>Text before</div>
+
+    <div class="main">
+
+        <div id="sidebar-and-separator">
+            <div id="sidebar">Filter</div>
+            <div id="separator">&gt;</div>
+        </div>
+
+        <div id="content">
+
+            This is where the main content for the page goes
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>
