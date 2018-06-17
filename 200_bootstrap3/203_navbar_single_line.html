@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Navbar single line</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <style>
+
+        .starter-template {
+            padding: 40px 15px;
+            text-align: center;
+        }
+
+        /*.navbar {*/
+            /*border-radius: 0;*/
+            /*border: 0;*/
+        /*}*/
+
+        /*!* Display the hamburger menu on the left *!*/
+        /*.navbar-toggle {*/
+            /*float: none;*/
+            /*margin-left: 15px;*/
+            /*margin-right: 0;*/
+        /*}*/
+
+        /*.navbarbanner {*/
+            /*margin-right: auto;*/
+            /*margin-left: auto;*/
+            /*padding-left: 15px;*/
+            /*padding-right: 15px;*/
+            /*background-color: #222;*/
+            /*font-size: 1em;*/
+        /*}*/
+
+        /*.navbarbanner:before, .navbarbanner:after {*/
+            /*content: " ";*/
+            /*display: table;*/
+        /*}*/
+
+        /*.navbarbanner a {*/
+            /*color: white;*/
+        /*}*/
+
+
+        .navbar-dropdowns {
+            position: absolute;
+            right: 0;
+        }
+
+        .navbar-dropdowns a {
+            color: white;
+        }
+
+        .navbar-dropdowns .dropdown {
+            float: right;
+            margin-top: 12px;
+            margin-left: 15px;
+            margin-right: 10px;
+            font-size: 1.5em;
+        }
+
+        .user-dropdown-text {
+            display: none;
+        }
+
+        /*.navbarbanner .user-dropdown,*/
+        /*.navbarbanner .uploads-dropdown,*/
+        /*.navbarbanner .help {*/
+            /*margin-top: 12px;*/
+            /*font-size: 1.5em;*/
+        /*}*/
+
+        /*.navbarbanner .uploads-dropdown-text {*/
+            /*display: none;*/
+        /*}*/
+
+        /*.navbarbanner .user-dropdown-text {*/
+            /*font-size: 0.85em;*/
+        /*}*/
+
+
+        /*@media screen and (min-width: 768px) {*/
+
+            /*.navbarbanner .user-dropdown,*/
+            /*.navbarbanner .uploads-dropdown,*/
+            /*.navbarbanner .help {*/
+                /*margin-top: 16px;*/
+                /*font-size: 1em;*/
+            /*}*/
+
+            /*.navbarbanner .uploads-dropdown-text {*/
+                /*display: inline;*/
+            /*}*/
+
+            /*.navbarbanner .user-dropdown-text {*/
+                /*font-size: 1em;*/
+            /*}*/
+
+        /*}*/
+
+        button.navbar-toggle {
+            float: left; /* Move the hamburger menu button from it's default position on the right */
+            margin-left: 10px;
+            margin-right: 0px;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Project name</a>
+
+            <div class="navbar-dropdowns">
+
+                <span class="dropdown help-dropdown">
+                    <a href="#">
+                        <span class="sr-only">Help page. Opens in new window.</span>
+                        <span aria-hidden="true" class="glyphicon glyphicon-question-sign help-icon"></span>
+                    </a>
+                </span>
+
+                <span class="dropdown uploads-dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        <span class="glyphicon glyphicon-open"></span>
+                    </a>
+                    <ul class="dropdown-menu pull-right">
+                        <li><a href="#">Do stuff!</a></li>
+                    </ul>
+                </span>
+
+                <span class="dropdown user-dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        <span class="glyphicon glyphicon-user"></span>
+                        <span class="user-dropdown-text">Randall Macfarlane</span> <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu pull-right">
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+
+
+    </div>
+</nav>
+
+
+
+
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
+<div class="fluid-container">
+
+
+
+    <header class="navbarbanner" role="banner">
+
+        <a href="#" style="font-size: 2.5em;">Project Name</a>
+
+        <div class="dropdown help">
+            <a href="#">
+                <span class="sr-only">Help page. Opens in new window.</span>
+                <span aria-hidden="true" class="glyphicon glyphicon-question-sign help-icon"></span>
+            </a>
+        </div>
+
+        <div class="dropdown uploads-dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                <span class="glyphicon glyphicon-open"></span>
+                <span class="uploads-dropdown-text">Uploads</span> <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu pull-right">
+                <li><a href="#">Do stuff!</a></li>
+            </ul>
+        </div>
+
+        <div class="dropdown user-dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="user-dropdown-text">Randall Macfarlane</span> <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu pull-right">
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </div>
+
+
+
+    </header>
+
+
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+
+        </div>
+    </nav>
+
+
+
+
+    <div class="starter-template">
+        <h1>Navbar with icons</h1>
+        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a
+            mostly barebones HTML document.</p>
+    </div>
+
+</div><!-- /.container -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
